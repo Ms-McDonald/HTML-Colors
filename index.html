@@ -5,49 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Palettes</title>
-    <style>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+    <style>        
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Coda', cursive;
+            font-weight: 400;
+            background: #C9C9C9;
+            background: linear-gradient(to left, #C9C9C9 0%, #000000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         table {
             width: 100%;
-            border-spacing: 30px;
+            table-layout: fixed;
+            border-spacing: 20px 5px;
         }
 
         td {
             height: 100px;
-            width: 100px;
             border-radius: 25px 25px 0 0;
+        }
+        .top {
+            box-shadow: 0 -10px 6px rgba(0, 0, 0, 0.2) inset;
+        }
+        .code {
+            height: 5px;
+            text-align: center;
+            font-family: 'Coda', cursive;
+            font-weight: 800;
+            text-transform: uppercase;
         }
         .bottom {
             height: 50px;
-            width: 100px;
             border-radius: 0 0 25px 25px;
+            box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2) inset; 
         }
     </style>
 </head>
 <body>
+
+    <h1>Ms. McDonald's Color Page</h1>
+
+    <!-- FIRST ROW -->
+    <!-- RGB -->
     <table>
         <tr>
-            <td style="background-color: #001219;"></td>
-            <td style="background-color: #005f73;"></td>
-            <td style="background-color: #0a9396;"></td>
-            <td style="background-color: #94d2bd;"></td>
-            <td style="background-color: #d4e9a6;"></td>
-            <td style="background-color: #e9d8a6;"></td>
+            <td class="top" style="background-color: rgb(0, 18, 25);"></td>
+            <td class="top" style="background-color: rgb(0, 95, 115);"></td>
+            <td class="top" style="background-color: rgb(10, 147, 150);"></td>
+            <td class="top" style="background-color: rgb(148, 210, 189);"></td>
+            <td class="top" style="background-color: rgb(212, 233, 166);"></td>
+            <td class="top" style="background-color: rgb(233, 216, 166);"></td>
         </tr>
         <tr>
-            <td class="code"><td>
-            <td class="code"><td>
-            <td class="code"><td>
-            <td class="code"><td>
-            <td class="code"><td>
-            <td class="code"><td>
+            <td class="code" style="color: rgb(0, 18, 25);">rgb(0, 18, 25)</td>
+            <td class="code" style="color: rgb(0, 95, 115);">rgb(0, 95, 115)</td>
+            <td class="code" style="color: rgb(10, 147, 150);">rgb(10, 147, 150)</td>
+            <td class="code" style="color: rgb(148, 210, 189);">rgb(148, 210, 189)</td>
+            <td class="code" style="color: rgb(212, 233, 166);">rgb(212, 233, 166)</td>
+            <td class="code" style="color: rgb(233, 216, 166);">rgb(233, 216, 166)</td>
         </tr>
         <tr>
-            <td class="bottom" style="background-color: #001219;"></td>
-            <td class="bottom" style="background-color: #005f73;"></td>
-            <td class="bottom" style="background-color: #0a9396;"></td>
-            <td class="bottom" style="background-color: #94d2bd;"></td>
-            <td class="bottom" style="background-color: #d4e9a6;"></td>
-            <td class="bottom" style="background-color: #e9d8a6;"></td>
+            <td class="bottom" style="background-color: rgb(0, 18, 25);"></td>
+            <td class="bottom" style="background-color: rgb(0, 95, 115);"></td>
+            <td class="bottom" style="background-color: rgb(10, 147, 150);"></td>
+            <td class="bottom" style="background-color: rgb(148, 210, 189);"></td>
+            <td class="bottom" style="background-color: rgb(212, 233, 166);"></td>
+            <td class="bottom" style="background-color: rgb(233, 216, 166);"></td>
+        </tr>
+    </table>
+
+    <br><br><br>
+    <!-- SECOND ROW -->
+    <!-- HEX -->
+    <table>
+        <tr>
+            <td class="top" style="background-color: #220901;"></td>
+            <td class="top" style="background-color: #621708;"></td>
+            <td class="top" style="background-color: #941b0c;"></td>
+            <td class="top" style="background-color: #bc3908;"></td>
+            <td class="top" style="background-color: #f6aa1c;"></td>
+            <td class="top" style="background-color: #e9bd6c;"></td>
+        </tr>
+        <tr>
+            <td class="code" style="color: #220901;">#220901</td>
+            <td class="code" style="color: #621708;">#621708</td>
+            <td class="code" style="color: #941b0c;">#941b0c</td>
+            <td class="code" style="color: #bc3908;">#bc3908</td>
+            <td class="code" style="color: #f6aa1c;">#f6aa1c</td>
+            <td class="code" style="color: #e9bd6c;">#e9bd6c</td>
+        </tr>
+        <tr>
+            <td class="bottom" style="background-color: #220901;"></td>
+            <td class="bottom" style="background-color: #621708;"></td>
+            <td class="bottom" style="background-color: #941b0c;"></td>
+            <td class="bottom" style="background-color: #bc3908;"></td>
+            <td class="bottom" style="background-color: #f6aa1c;"></td>
+            <td class="bottom" style="background-color: #e9bd6c;"></td>
+        </tr>
+    </table>
+
+    <br><br><br>
+    <!-- THIRD ROW -->
+    <!-- HEX -->
+    <table>
+        <tr>
+            <td class="top" style="background-color: #006466;"></td>
+            <td class="top" style="background-color: #0b525b;"></td>
+            <td class="top" style="background-color: #1b3a4b;"></td>
+            <td class="top" style="background-color: #212f45;"></td>
+            <td class="top" style="background-color: #312244;"></td>
+            <td class="top" style="background-color: #4d194d;"></td>
+        </tr>
+        <tr>
+            <td class="code" style="color: #006466;">#006466</td>
+            <td class="code" style="color: #0b525b;">#0b525b</td>
+            <td class="code" style="color: #1b3a4b;">#1b3a4b</td>
+            <td class="code" style="color: #212f45;">#212f45</td>
+            <td class="code" style="color: #312244;">#312244</td>
+            <td class="code" style="color: #4d194d;">#4d194d</td>
+        </tr>
+        <tr>
+            <td class="bottom" style="background-color: #006466;"></td>
+            <td class="bottom" style="background-color: #0b525b;"></td>
+            <td class="bottom" style="background-color: #1b3a4b;"></td>
+            <td class="bottom" style="background-color: #212f45;"></td>
+            <td class="bottom" style="background-color: #312244;"></td>
+            <td class="bottom" style="background-color: #4d194d;"></td>
         </tr>
     </table>
 </body>
